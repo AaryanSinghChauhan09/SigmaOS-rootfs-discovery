@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-rootfs-discovery"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS rootfs-discovery component - boot"
+
+[lib]
+name = "rootfs_discovery"
+path = "src/lib.rs"
