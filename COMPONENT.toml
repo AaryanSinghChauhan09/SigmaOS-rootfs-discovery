@@ -3,7 +3,7 @@ name = "SigmaOS-rootfs-discovery"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "rootfs-discovery component"
+description = "rootfs discovery component"
 upstream = []
 
 [contract]
