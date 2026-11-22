@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-rootfs-discovery Component Wiki
+# SigmaOS-rootfs-discovery Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-rootfs-discovery provides rootfs discovery component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-rootfs-discovery provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-rootfs-discovery Abstraction
-- Fail-Fast on SigmaOS-rootfs-discovery Initialization Errors
-- Deterministic SigmaOS-rootfs-discovery Setup
-- Clear Abstraction Over SigmaOS-rootfs-discovery APIs
-- Composition over Inheritance for SigmaOS-rootfs-discovery extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-rootfs-discovery Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-rootfs-discovery Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-rootfs-discovery Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-rootfs-discovery APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-rootfs-discovery extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-rootfs-discovery follows a SigmaOS-rootfs-discovery pattern:
+SigmaOS-rootfs-discovery follows a SigmaOS-rootfs-discovery pattern:
 - **SigmaOS-rootfs-discovery Core**: Provides SigmaOS-rootfs-discovery support, SigmaOS-rootfs-discovery management, and SigmaOS-rootfs-discovery tracking
 - **Management**: Supports SigmaOS-rootfs-discovery management, SigmaOS-rootfs-discovery configuration, and SigmaOS-rootfs-discovery lifecycle
 - **Tracking**: Supports SigmaOS-rootfs-discovery status, SigmaOS-rootfs-discovery tracking, and SigmaOS-rootfs-discovery lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-rootfs-discovery follows a SigmaOS-rootfs-discovery pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-rootfs-discovery by given configuration
--  - Register a SigmaOS-rootfs-discovery by given name
--  - Get SigmaOS-rootfs-discovery status and SigmaOS-rootfs-discovery availability
--  - Track SigmaOS-rootfs-discovery management and SigmaOS-rootfs-discovery tracking
+- Manage a SigmaOS-rootfs-discovery by given configuration
+- Register a SigmaOS-rootfs-discovery by given name
+- Get SigmaOS-rootfs-discovery status and SigmaOS-rootfs-discovery availability
+- Track SigmaOS-rootfs-discovery management and SigmaOS-rootfs-discovery tracking
 - Error types for SigmaOS-rootfs-discovery failure scenarios or unsupported SigmaOS-rootfs-discovery types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-rootfs-discovery init, SigmaOS-rootfs-discovery management)
 3. **Assert**: Verify the expected SigmaOS-rootfs-discovery results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-rootfs-discovery initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-rootfs-discovery failure scenarios
 - Unit tests provided for SigmaOS-rootfs-discovery management and configuration
